@@ -11,7 +11,6 @@ public class eq1 implements Equation {
     @Override
     public double getAnalytic(Point initial, double v) {
         double c = (initial.getY() - (0.5 * Math.pow(initial.getX(), 2) - 0.5 * initial.getX() + 0.25)) / (Math.exp(-2 * initial.getX()));
-        System.out.println(c);
         return c * Math.exp(-2 * v) + 0.5 * Math.pow(v, 2) - 0.5 * v + 0.25;
     }
 
