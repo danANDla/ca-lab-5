@@ -4,6 +4,5 @@ import entities.Point;
 
 public interface Equation {
     public double getImage(Point v);
-    public double getAnalytic(double v);
-    public String toString();
+    public double getAnalytic(Point initial, double v);
 }

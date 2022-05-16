@@ -35,7 +35,7 @@ public class Euler {
         ans[0] = new Point(currX, prevY);
         for(int i = 1;  i <= steps; ++i){
             currX += h;
-            prevY = eq.getAnalytic(currX);
+            prevY = eq.getAnalytic(initial, currX);
             ans[i] = new Point(currX, prevY);
         }
         return ans;
